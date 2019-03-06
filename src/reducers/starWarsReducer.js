@@ -17,13 +17,14 @@ export const charsReducer = (state = initialState, action) => {
       return {
         ...state,
         error: "",
-        isFetching: true,
-        characters: action.payload
+        isFetching: false,
+        characters: action.payload.results
       };
     case DATA_ERROR:
       return {
         ...state,
-        error: "Oups, something went wrong"
+        error: "Oups, something went wrong",
+        isFetching: false
       };
     // Fill me in with the important reducers
     // action types should be FETCHING, SUCCESS and FAILURE

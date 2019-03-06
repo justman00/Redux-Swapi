@@ -3,9 +3,9 @@ import axios from "axios";
 
 // we'll need to create 3 different action types here.
 // one for fetching, one for success and one for failure
-const DATA_FETCHING = "DATA_FETCHING";
-const DATA_SUCCESS = "DATA_SUCCESS";
-const DATA_ERROR = "DATA_ERROR";
+export const DATA_FETCHING = "DATA_FETCHING";
+export const DATA_SUCCESS = "DATA_SUCCESS";
+export const DATA_ERROR = "DATA_ERROR";
 
 // our action creator will be a function that returns a function
 // the url to fetch characters from is `https://swapi.co/api/people/`
